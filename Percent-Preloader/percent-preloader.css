@@ -12,13 +12,10 @@
 	height: 100vh;
 	background: whitesmoke;
 	opacity: 1;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
+	color: transparent;
 	transition: all 0.3s ease;
 	transition-duration: 500ms;
-	-webkit-transition-duration: 500ms;
 	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 	z-index: 99;
 	transition-delay: 0.65s;
 }
@@ -30,6 +27,7 @@
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+	transition: color 0ms linear;
 }
 .preloader:before {
 	content: "";
@@ -41,6 +39,7 @@
 	position: absolute;
 	left: -200px;
 	top: 0;
+	transition: color 0ms linear;
 }
 .preloader:after {
 	content: "";
@@ -52,14 +51,11 @@
 	position: absolute;
 	right: -200px;
 	top: 0;
+	transition: color 0ms linear;
 }
 .preloader * {
-	transition: background, opacity, border-width, border-color, transform, visibility, left, right, position;
 	transition-duration: 500ms;
 	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-	-webkit-transition: background, opacity, border-width, border-color, transform, visibility,  left, right, position;
-	-webkit-transition-duration: 500ms;
-	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 .transition-overlay {
 	width: 100vw;
@@ -69,13 +65,6 @@
 	bottom: 0;
 	background: #797979;
 	z-index: 9999;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	transition-duration: 500ms;
-	-webkit-transition-duration: 500ms;
-	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 	visibility: hidden;
 }
 .preloader .inner .percentage {
@@ -100,4 +89,8 @@
 .page-loaded .preloader {
 	left: calc(-100% - 200px);
 	visibility: hidden;
+}
+
+#chars{
+	color: transparent
 }

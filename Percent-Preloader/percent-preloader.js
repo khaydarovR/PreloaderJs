@@ -1,4 +1,4 @@
-var LoaderTextColor = "red"
+var LoaderTextColor = "green"
 
 var counting = setInterval(function () {
 	document.getElementById("chars").style.color = LoaderTextColor;
